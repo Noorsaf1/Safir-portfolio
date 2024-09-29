@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Safir Noorani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">ABOUT ME</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">PROJECT</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">CONTACT</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Safir Noorani</h1>
+        <h2>Web Developer / Full stack Developer / Front End Developer / Backend Developer </h2>
+        <div id="menu">
+            <a onclick="showabout()">ABOUT ME</a>
+            <a onclick="showwork()">PROJECT</a>
+            <a onclick="showcontact()">CONTACT</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;">
+                    <a class="social" href="https://www.facebook.com/profile.php?id=100011277228519" target="_blank"><i class="fab fa-facebook"></i></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;">
+                    <a class="social" href="https://www.twitter.com/YourProfile" target="_blank"><i class="fab fa-twitter"></i></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;">
+                    <a class="social" href="https://www.instagram.com/asafir32/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;">
+                    <a class="social" href="https://www.linkedin.com/in/YourProfile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+
+    
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>PROJECTS.</h1>
+    
+        <!-- Första projektet -->
+        <section id="project1" class="project-section">
+            <h2>Agrill</h2>
+            <p>
+                Project goal: Create a dynamic and responsive customer website that focuses on user-friendly design and smooth interaction. The website should use HTML, SCSS and JavaScript to deliver a modern experience, including nice animations and transition effects.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <a href="https://github.com/Noorsaf1/Kund-agrill-" target="_blank" class="btn_one">GitHub</a>
+            <a href="https://agrilli.netlify.app/" target="_blank" class="btn_two">Live Server</a>
+        </section>
+    
+        <!-- Andra projektet -->
+        <section id="project2" class="project-section" style="display:none;">
+            <h2>Personal Portfolio Website</h2>
+            <p>
+                My personal portfolio website made with only HTML, CSS and JS with a clean and minimal user interface.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Node.js</div>
+                <div><i class="fas fa-circle"></i>&nbsp; API </div>
+            </div>
+            <a href="https://github.com/Noorsaf1/Portfolio_Safir" target="_blank" class="btn_one">GitHub</a>
+            <a href="https://nooranisafirr.netlify.app/" target="_blank" class="btn_two">Live Server</a>
+        </section>
+    
+        <!-- Knapp för att växla mellan projekten -->
+        <button class="btn_one" onclick="showProject(1)">View Project 1</button>
+        <button class="btn_two" onclick="showProject(2)">View Project 2</button>
+    </div>
+    
+
+
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About.</h1>
+            <section>
+                <h2> Safir Noorani  </h2>
+                <p> Web Developer | Full Stack Developer</p>
+                <p>
+                    I am a web developer with practical experience in both front-end and back-end technologies. I have a strong foundation in HTML, CSS, JavaScript and experience working with modern frameworks such as React, Bootstrap and Node.js. My educational background from the Media Institute, supplemented by practical internships, has equipped me with the skills to handle everything from responsive design to server-side logic and database management. I am passionate about coding, am quick to learn new technologies and thrive in collaborative environments.
+                </p>
+                <p>
+                    My educational background from the Media Institute, supplemented by practical internships, has equipped me with the skills to handle everything from responsive design to server-side logic and database management. I am passionate about coding, am quick to learn new technologies and thrive in collaborative environments.
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    Front-End Development:
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React.js, Bootstrap, Three.js</li>
+                        <li>Responsive Web Design (RWD)</li>
+                        <li>UI/UX Design</li>
+                    </ul>  
+                </p>
+
+                <p>
+                    Back-End Development:
+                    <ul>
+                        <li>Node.js, Express.js</li>
+                        <li>Server-side logic development</li>
+                        <li>API Integration</li>
+                        <li>Database Management (MySQL, MongoDB)</li>
+                    </ul>  
+                </p>
+
+
+                <p>
+                    Tools & Technologies:
+                    <ul>
+                        <li>Git (Version Control)</li>
+                        <li>RESTful APIs</li>
+                        <li>Webpack, NPM</li>
+                        <li>3D Modeling with Three.js</li>
+                    </ul>  
+                </p>
+
+
+                <p>
+                    Other Skills:
+                    <ul>
+                        <li>Troubleshooting and debugging</li>
+                        <li>Agile Development Methodologies</li>
+                        <li>Collaboration and teamwork</li>
+                        <li>Project Management and Coordination</li>
+                    </ul>  
+                </p>
+
+
+
+
+
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth by Safir <br> <a href="https://github.com/Noorsaf1">Safir Noorani</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
